@@ -1,13 +1,13 @@
-# Getting Started
-### Requirements
+# Rehat
+### Android Project Architecture
 
-* Google Account
-* Mobile Device
+![](https://github.com/rehat-app/rehat-AndroidApp/blob/main/misc/apparchitecture.png)
 
-Claim your free $300 GCP credits [here](https://cloud.google.com/free)
 
-### Steps
-1.	Set the Google Cloud Storage folder permission
-2.	Create Cloud SQL dataset and table schemes
-3.	Deploy the Python Flask app on Google App Engine
-4.	Deploy containerized application components to Cloud Run
+### Running The App (Android Studio)
+1. Clone the repository by running the command `git clone https://github.com/rehat-app/rehat-AndroidApp`
+2. Wait for gradle to sync with your project
+3. Select your preferred device emulator for running the app <br />
+![](https://github.com/rehat-app/rehat-AndroidApp/blob/main/misc/emulatorselection.png)
+4. Run the app in the selected emulator <br />
+![](https://github.com/rehat-app/rehat-AndroidApp/blob/main/misc/apprunned.png)
