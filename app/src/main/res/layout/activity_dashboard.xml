@@ -1,0 +1,437 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dark"
+    android:fitsSystemWindows="true">
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/dark"
+        android:paddingBottom="110dp"
+        android:clipToPadding="false"
+        android:fillViewport="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/dark">
+
+            <ImageView
+                android:id="@+id/btn_logout"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:layout_marginStart="32dp"
+                android:contentDescription="camera button"
+                android:src="@drawable/ic_baseline_exit_to_app_24"
+                android:scaleX="-1"
+                app:tint="@color/design_default_color_error"
+                app:layout_constraintBottom_toBottomOf="@+id/textView2"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/textView2" />
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="32dp"
+                android:layout_marginEnd="8dp"
+                android:fontFamily="@font/poppins_medium"
+                android:text="Selamat Datang"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toStartOf="@+id/btn_edit"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toEndOf="@+id/iv_profile"
+                app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:ellipsize="marquee"
+                android:fontFamily="@font/poppins_bold"
+                android:maxLines="1"
+                android:paddingTop="2dp"
+                android:text="Reyhan Hakim"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="@id/textView5"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/textView5"
+                app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:fontFamily="@font/poppins_bold"
+                android:text="Beranda"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/iv_profile"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginStart="32dp"
+                app:layout_constraintBottom_toBottomOf="@+id/tv_name"
+                app:layout_constraintDimensionRatio="1:1"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/textView5"
+                app:srcCompat="@drawable/default_avatar"
+                android:contentDescription="profile photo" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/btn_edit"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginVertical="4dp"
+                android:layout_marginEnd="32dp"
+                android:backgroundTint="@color/dark_2"
+                android:drawableTint="@color/light_2"
+                app:cardCornerRadius="100dp"
+                app:layout_constraintDimensionRatio="1:1"
+                app:layout_constraintBottom_toBottomOf="@+id/tv_name"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/textView5"
+                app:tint="@color/light_2">
+
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/ic_baseline_create_24"
+                    android:backgroundTint="@color/light_2"/>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cv_view_pager"
+                android:layout_width="0dp"
+                android:layout_height="220dp"
+                android:layout_marginTop="24dp"
+                android:backgroundTint="@color/dark"
+                app:cardCornerRadius="0dp"
+                app:cardElevation="0dp"
+                app:cardMaxElevation="0dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/iv_profile">
+
+                <androidx.viewpager2.widget.ViewPager2
+                    android:id="@+id/vp_dashboard_banner"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </androidx.cardview.widget.CardView>
+
+            <com.google.android.material.tabs.TabLayout
+                android:id="@+id/tab_dashboard_banner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:background="@color/dark"
+                app:layout_constraintEnd_toEndOf="@id/cv_view_pager"
+                app:layout_constraintStart_toStartOf="@id/cv_view_pager"
+                app:layout_constraintTop_toBottomOf="@id/cv_view_pager"
+                app:tabBackground="@drawable/tab_page_selector"
+                app:tabGravity="center"
+                app:tabIndicatorHeight="0dp" />
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/cl_rehat_help"
+                android:layout_width="130dp"
+                android:layout_height="180dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginTop="24dp"
+                android:elevation="3dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/cl_rehat_edukasi"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/cv_community">
+
+                <ImageView
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:layout_marginBottom="72dp"
+                    android:elevation="3dp"
+                    android:src="@drawable/rehat_help_button_image"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+                <View
+                    android:id="@+id/btn_rehat_help"
+                    android:layout_width="0dp"
+                    android:layout_height="130dp"
+                    android:background="@drawable/dashboard_button_background"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:foreground="?attr/selectableItemBackground"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintDimensionRatio="1:1"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+                <TextView
+                    android:id="@+id/tv_rehat"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="8dp"
+                    android:fontFamily="@font/poppins_bold"
+                    android:text="Rehat Help"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="13sp"
+                    app:layout_constraintBottom_toTopOf="@id/tv_rehat_desc"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+                <TextView
+                    android:id="@+id/tv_rehat_desc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins"
+                    android:paddingHorizontal="8dp"
+                    android:paddingBottom="8dp"
+                    android:text="Membantumu memaksimalkan\nfitur dengan mudah "
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="9sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/cl_rehat_edukasi"
+                android:layout_width="130dp"
+                android:layout_height="180dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="32dp"
+                android:elevation="3dp"
+                app:layout_constraintBottom_toBottomOf="@+id/cl_rehat_help"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/cl_rehat_help"
+                app:layout_constraintTop_toTopOf="@+id/cl_rehat_help">
+
+
+                <ImageView
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:layout_marginBottom="72dp"
+                    android:elevation="3dp"
+                    android:src="@drawable/rehat_edukasi_button_image"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+                <View
+                    android:id="@+id/btn_rehat_edukasi"
+                    android:layout_width="0dp"
+                    android:layout_height="130dp"
+                    android:background="@drawable/dashboard_button_background"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:foreground="?attr/selectableItemBackground"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintDimensionRatio="1:1"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+                <TextView
+                    android:id="@+id/tv_rehat_edukasi"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="8dp"
+                    android:fontFamily="@font/poppins_bold"
+                    android:text="Edukasi Rehat "
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="13sp"
+                    app:layout_constraintBottom_toTopOf="@id/tv_rehat_edukasi_desc"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+                <TextView
+                    android:id="@+id/tv_rehat_edukasi_desc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins"
+                    android:paddingHorizontal="8dp"
+                    android:paddingBottom="8dp"
+                    android:text="Membantumu memaksimalkan\nfitur dengan mudah"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="9sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <TextView
+                android:id="@+id/tv_community"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Komunitasku"
+                android:fontFamily="@font/poppins_bold"
+                android:layout_marginHorizontal="32dp"
+                android:textSize="20dp"
+                android:textColor="@color/white"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tab_dashboard_banner"/>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cv_community"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:cardBackgroundColor="#33F5FEFF"
+                app:cardCornerRadius="20dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginHorizontal="32dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_community">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/cv_new_community"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:foreground="?attr/selectableItemBackground"
+                        app:cardCornerRadius="20dp"
+                        app:cardBackgroundColor="@color/dark_2">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:id="@+id/tv_community_header"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/poppins_bold"
+                                android:layout_marginHorizontal="16dp"
+                                android:text="Daftar Komunitasmu"
+                                android:textColor="@color/white"
+                                android:textSize="16sp"
+                                app:layout_constraintBottom_toTopOf="@+id/textView11"
+                                app:layout_constraintEnd_toStartOf="@id/img_fist"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="@+id/img_fist" />
+
+                            <TextView
+                                android:id="@+id/textView11"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/poppins"
+                                android:layout_marginHorizontal="16dp"
+                                android:text="Pantau kualitas tidurmu agar produktif setiap waktu!"
+                                android:textColor="@color/white"
+                                android:textSize="12sp"
+                                app:layout_constraintBottom_toBottomOf="@+id/img_fist"
+                                app:layout_constraintEnd_toStartOf="@id/img_fist"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toBottomOf="@id/tv_community_header"
+                                app:layout_constraintVertical_bias="0.0" />
+
+                            <ImageView
+                                android:id="@+id/img_fist"
+                                android:layout_width="80dp"
+                                android:layout_height="80dp"
+                                android:layout_marginVertical="16dp"
+                                android:layout_marginEnd="16dp"
+                                android:src="@drawable/fist_image"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:layout_constraintBottom_toBottomOf="parent"/>
+
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/rv_community"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                        android:orientation="vertical"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginBottom="8dp"
+                        tools:listitem="@layout/community_list_layout"/>
+
+                </LinearLayout>
+
+
+
+
+            </androidx.cardview.widget.CardView>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/bottom_nav_bar"
+        android:layout_width="0dp"
+        android:layout_height="110dp"
+        android:background="#00FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+
+        <ImageButton
+            android:id="@+id/btn_camera"
+            android:layout_width="72dp"
+            android:layout_height="72dp"
+            android:background="@drawable/dashboard_nav_bar_button_background"
+            android:backgroundTint="@color/light_2"
+            android:padding="12dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_camera"
+            android:elevation="3dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?attr/selectableItemBackground"
+            android:text="Button"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:contentDescription="camera button" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

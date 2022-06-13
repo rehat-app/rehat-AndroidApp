@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="@color/dark"
+    tools:context=".ui.camera.CameraActivity">
+
+
+    <ProgressBar
+        android:id="@+id/pg_camera"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:elevation="5dp"
+        android:visibility="gone"
+        android:indeterminate="true"
+        android:indeterminateDrawable="@drawable/progressbar_color"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/camFace" />
+
+    <TextView
+        android:id="@+id/textView25"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="24dp"
+        android:text="Arahkan camera ke muka agar tombol potret aktif"
+        android:textColor="@color/white"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.camera.view.PreviewView
+        android:id="@+id/camFace"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginVertical="32dp"
+        app:layout_constraintBottom_toTopOf="@+id/btn_klik"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView25">
+
+    </androidx.camera.view.PreviewView>
+
+    <View
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="84dp"
+        android:background="@drawable/camera_border_shape_circular"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/camFace" />
+
+    <ImageButton
+        android:id="@+id/btn_klik"
+        android:layout_width="72dp"
+        android:layout_height="72dp"
+        android:background="@drawable/dashboard_nav_bar_button_background"
+        android:padding="12dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_camera"
+        android:elevation="3dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:foreground="?attr/selectableItemBackground"
+        android:layout_marginBottom="32dp"
+        android:enabled="false"
+        android:text="Jepret"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/fafir/AndroidStudioProjects/CapsstoneBangkit/app/src/main/res/drawable/camera_border_shape_circular.xml" value="0.139" />
+        <entry key="..\:/Users/fafir/AndroidStudioProjects/CapsstoneBangkit/app/src/main/res/drawable/camera_button_inactive.xml" value="0.1405" />
+        <entry key="..\:/Users/fafir/AndroidStudioProjects/CapsstoneBangkit/app/src/main/res/drawable/dashboard_button_background.xml" value="0.14" />
+        <entry key="..\:/Users/fafir/AndroidStudioProjects/CapsstoneBangkit/app/src/main/res/drawable/dashboard_nav_bar_button_background.xml" value="0.1405" />
+        <entry key="..\:/Users/fafir/AndroidStudioProjects/CapsstoneBangkit/app/src/main/res/drawable/default_page_dot.xml" value="0.162" />
+        <entry key="..\:/Users/fafir/AndroidStudioProjects/CapsstoneBangkit/app/src/main/res/drawable/ic_baseline_create_24.xml" value="0.118" />
+        <entry key="..\:/Users/fafir/AndroidStudioProjects/CapsstoneBangkit/app/src/main/res/drawable/ic_baseline_settings_24.xml" value="0.1225" />
+        <entry key="..\:/Users/fafir/AndroidStudioProjects/CapsstoneBangkit/app/src/main/res/drawable/ic_password.xml" value="0.163" />
+        <entry key="..\:/Users/fafir/AndroidStudioProjects/CapsstoneBangkit/app/src/main/res/drawable/page_indicator.xml" value="0.162" />
+        <entry key="..\:/Users/fafir/AndroidStudioProjects/CapsstoneBangkit/app/src/main/res/drawable/progressbar_color.xml" value="0.1225" />
+        <entry key="..\:/Users/fafir/AndroidStudioProjects/CapsstoneBangkit/app/src/main/res/drawable/seekbar_thumb_icon.xml" value="0.1" />
+        <entry key="..\:/Users/fafir/AndroidStudioProjects/CapsstoneBangkit/app/src/main/res/drawable/selected_page_dot.xml" value="0.162" />
+        <entry key="..\:/Users/fafir/AndroidStudioProjects/CapsstoneBangkit/app/src/main/res/font/poppins.xml" value="0.23958333333333334" />
+        <entry key="..\:/Users/fafir/AndroidStudioProjects/CapsstoneBangkit/app/src/main/res/font/poppins_black.xml" value="0.23958333333333334" />
+        <entry key="..\:/Users/fafir/AndroidStudioProjects/CapsstoneBangkit/app/src/main/res/font/poppins_black_italic.xml" value="0.23958333333333334" />
+        <entry key="..\:/Users/fafir/AndroidStudioProjects/CapsstoneBangkit/app/src/main/res/layout/activity_analysis_result.xml" value="0.25" />
+        <entry key="..\:/Users/fafir/AndroidStudioProjects/CapsstoneBangkit/app/src/main/res/layout/activity_camera.xml" value="0.17980072463768115" />
+        <entry key="..\:/Users/fafir/AndroidStudioProjects/CapsstoneBangkit/app/src/main/res/layout/activity_community.xml" value="0.182518115942029" />
+        <entry key="..\:/Users/fafir/AndroidStudioProjects/CapsstoneBangkit/app/src/main/res/layout/activity_create_community.xml" value="0.22" />
+        <entry key="..\:/Users/fafir/AndroidStudioProjects/CapsstoneBangkit/app/src/main/res/layout/activity_dashboard.xml" value="0.22" />
+        <entry key="..\:/Users/fafir/AndroidStudioProjects/CapsstoneBangkit/app/src/main/res/layout/activity_edit_profile.xml" value="0.1793478260869565" />
+        <entry key="..\:/Users/fafir/AndroidStudioProjects/CapsstoneBangkit/app/src/main/res/layout/activity_forget_password.xml" value="0.17572463768115942" />
+        <entry key="..\:/Users/fafir/AndroidStudioProjects/CapsstoneBangkit/app/src/main/res/layout/activity_login.xml" value="0.17028985507246377" />
+        <entry key="..\:/Users/fafir/AndroidStudioProjects/CapsstoneBangkit/app/src/main/res/layout/activity_on_boarding.xml" value="0.21" />
+        <entry key="..\:/Users/fafir/AndroidStudioProjects/CapsstoneBangkit/app/src/main/res/layout/activity_register.xml" value="0.17028985507246377" />
+        <entry key="..\:/Users/fafir/AndroidStudioProjects/CapsstoneBangkit/app/src/main/res/layout/activity_rehat_placeholder.xml" value="0.1793478260869565" />
+        <entry key="..\:/Users/fafir/AndroidStudioProjects/CapsstoneBangkit/app/src/main/res/layout/activity_splash_screen.xml" value="0.17391304347826086" />
+        <entry key="..\:/Users/fafir/AndroidStudioProjects/CapsstoneBangkit/app/src/main/res/layout/activity_test.xml" value="0.1793478260869565" />
+        <entry key="..\:/Users/fafir/AndroidStudioProjects/CapsstoneBangkit/app/src/main/res/layout/activity_update_password.xml" value="0.17028985507246377" />
+        <entry key="..\:/Users/fafir/AndroidStudioProjects/CapsstoneBangkit/app/src/main/res/layout/community_list_layout.xml" value="0.182518115942029" />
+        <entry key="..\:/Users/fafir/AndroidStudioProjects/CapsstoneBangkit/app/src/main/res/layout/community_member_list_layout.xml" value="0.1717948717948718" />
+        <entry key="..\:/Users/fafir/AndroidStudioProjects/CapsstoneBangkit/app/src/main/res/layout/dashboard_banner_list_layout.xml" value="0.182518115942029" />
+        <entry key="..\:/Users/fafir/AndroidStudioProjects/CapsstoneBangkit/app/src/main/res/layout/fragment_community_agenda.xml" value="0.182518115942029" />
+        <entry key="..\:/Users/fafir/AndroidStudioProjects/CapsstoneBangkit/app/src/main/res/layout/fragment_community_member.xml" value="0.182518115942029" />
+        <entry key="..\:/Users/fafir/AndroidStudioProjects/CapsstoneBangkit/app/src/main/res/layout/onboarding_banner_list_layout.xml" value="0.17391304347826086" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" project-jdk-name="11" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

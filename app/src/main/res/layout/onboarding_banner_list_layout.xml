@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:cardBackgroundColor="@color/dark"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <ImageView
+        android:id="@+id/imv_banner"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:contentDescription="onboarding banner"
+        app:srcCompat="@drawable/onboarding_image2"
+        tools:srcCompat="@drawable/onboarding_image2" />
+
+</androidx.cardview.widget.CardView>
